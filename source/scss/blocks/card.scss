@@ -1,0 +1,352 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  min-height: 400px;
+  padding: 76px 0 0 0;
+
+  @media (max-width: $tablet_max) {
+    padding: 26px 0 0 0;
+  }
+
+  @media (max-width: $mobile_max) {
+    padding: 0;
+  }
+}
+
+.card__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  width: 85.35vw;
+  max-width: 1166px;
+  min-height: 438px;
+
+  @media (max-width: $tablet_max) {
+    width: 88vw;
+  }
+
+  @media (max-width: $mobile_max) {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 99vw;
+  }
+}
+
+.card__img-place {
+  display: grid;
+  grid-template-rows: 129px 30px 125px 30px 125px;
+  grid-template-columns: 98px 30px 470px;
+  width: 596px;
+  min-height: 438px;
+
+  @media (max-width: $tablet_max) {
+    grid-template-rows: 286px 14px 129px;
+    grid-template-columns: 97px 14px 97px 14px 97px;
+    width: 319px;
+    min-height: 429px;
+    margin: 6px 0 0 0;
+  }
+
+  @media (max-width: $mobile_max) {
+    grid-template-rows: 237px 25px;
+    grid-template-columns: 290px;
+    width: fit-content;
+    min-height: 260px;
+    margin: 0;
+  }
+}
+
+.card__img {
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: $bg_third_color;
+}
+
+.card__img--1 {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  background-image: url('../img/cards/gold-necklace/desk/img--1.jpg');
+
+  @media (max-width: $tablet_max) {
+    grid-row: -1 / -2;
+    grid-column: 1 / 2;
+  }
+}
+
+.card__img--2 {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+  background-image: url('../img/cards/gold-necklace/desk/img--2.jpg');
+
+  @media (max-width: $tablet_max) {
+    grid-row: -1 / -2;
+    grid-column: 3 / 4;
+  }
+}
+
+.card__img--3 {
+  grid-row: -1 / -2;
+  grid-column: 1 / 2;
+  background-image: url('../img/cards/gold-necklace/desk/img--3.jpg');
+
+  @media (max-width: $tablet_max) {
+    grid-row: -1 / -2;
+    grid-column: 5 / 6;
+  }
+}
+
+.card__img--4 {
+  grid-row: 1 / -1;
+  grid-column: -1 / -2;
+  background-image: url('../img/cards/gold-necklace/desk/img--4.jpg');
+
+  @media (max-width: $tablet_max) {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+  }
+}
+
+.card__img--hide {
+  @media (max-width: $mobile_max) {
+    display: none;
+  }
+}
+
+.card__img--show {
+  @media (max-width: $mobile_max) {
+    display: block;
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+  }
+}
+
+.card__img-pagination {
+  display: none;
+
+  @media (max-width: $mobile_max) {
+    grid-row: -2 / -1;
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+}
+
+.card__specifications {
+  width: 370px;
+  min-height: 436px;
+  margin: 0 7.2vw 0 0;
+
+  @media (min-width: 1367px) {
+    margin: 0 98px 0 0;
+  }
+
+  @media (max-width: 1260px) {
+    margin: 0 0 0 10px;
+  }
+
+  @media (max-width: $tablet_max) {
+    width: 318px;
+  }
+
+  @media (max-width: $mobile_max) {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 91vw;
+    margin: 44px 0 0 0;
+  }
+}
+
+.card__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+}
+
+.card__heading h3 {
+  margin: 0;
+  font-family: $font_cg;
+  font-size: 34px;
+  line-height: 34px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.card__price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 19px  0 0 0;
+}
+
+.card__cost {
+  margin: 1px 0 0 5px;
+}
+
+.card__price span {
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.card__switcher-place {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  margin: 41px 0 0 0;
+
+  @media (max-width: $mobile_max) {
+    align-self: start;
+    margin: 31px 0 0 0;
+  }
+}
+
+.card__info-switcher a {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: $text_main_color;
+}
+
+.card__info-switcher--active a {
+  color: $text_second_color;
+}
+
+.card__detail-switcher {
+  margin: 0 0 0 36px;
+
+  @media (max-width: $mobile_max) {
+    margin: 0 0 0 12vw;
+  }
+}
+
+.card__features {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+.card__features-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 12px 0 13px 0;
+  list-style: none;
+  border-bottom: 1px solid $border_first;
+}
+
+.card__features-item p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: $text_main_color;
+}
+
+.card__features-name p {
+  font-weight: 500;
+}
+
+.card__features-value p {
+  font-weight: 400;
+}
+
+.card__button-add {
+  width: 100%;
+  height: 68px;
+  margin: 48px 0 0 0;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 1px;
+  color: $bg_main_color;
+  border: none;
+  background-color: $bg_second_color;
+
+  @media (max-width: $mobile_max) {
+    margin: 39px 0 0 0;
+  }
+}
+
+.card__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 10px;
+  margin: 15px 0 0 0;
+
+  @media (max-width: $tablet_max) {
+    margin: 12px 0 0 0;
+  }
+
+  @media (max-width: $mobile_max) {
+    width: 96.9%;
+    margin: 12px 0 0 0;
+  }
+}
+
+.card__footer-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 20px;
+}
+
+.card__footer-item span {
+  display: block;
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  text-align: center;
+  color: $text_second_color;
+
+  @media (max-width: $tablet_max) {
+    font-size: 12px;
+  }
+
+  @media (max-width: $mobile_max) {
+    width: 60px;
+    line-height: 16px;
+  }
+}
+
+.card__footer-item:nth-child(n+2) {
+  padding: 0 0 0 13px;
+  border-left: 1px solid $border_first;
+
+  @media (max-width: $tablet_max) {
+    padding: 0 0 0 11px;
+  }
+
+  @media (max-width: $mobile_max) {
+    padding: 0 0 0 31px;
+  }
+}

@@ -1,0 +1,78 @@
+.mailing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 36.82vw;
+  max-width: 505px;
+  height: 40px;
+  border-bottom: 1px solid $bg_main_color;
+
+  @media (max-width: $tablet_max) {
+    width: 73.32vw;
+    max-width: 564px;
+  }
+
+  @media (max-width: $mobile_max) {
+    width: 91.62vw;
+  }
+}
+
+.mailing__input {
+  width: 26.35vw;
+  max-width: 360px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+
+  @media (max-width: $tablet_max) {
+    width: 55.05vw;
+  }
+}
+
+.mailing__input::-webkit-input-placeholder {
+  font-family: $font_p;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  text-align: left;
+  color: $text_second_color;
+  word-spacing: -3px;
+  letter-spacing: 0;
+}
+
+.mailing__button-submit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 108px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: $bg_main_color;
+  background-color: transparent;
+  border: none;
+}
+
+.mailing__button-submit span {
+  width: 65px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: $bg_main_color;
+  word-spacing: 1px;
+}
+
+.mailing__button-submit svg {
+  width: 34px;
+  height: 11px;
+  margin: 0 0 3px 0;
+  transform: rotate(180deg);
+  stroke: $bg_main_color;
+}

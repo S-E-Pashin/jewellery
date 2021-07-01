@@ -1,0 +1,31 @@
+$font_p: "Poppins", "Arial", sans-serif;
+$font_cg: "Cormorant Garamond", "Arial", sans-serif;
+$base_font: 10;
+
+
+$desktop_max: 1366px;
+$content__desk: 1170px;
+$content__desk__vw: 85.65vw;
+
+$desktop_min: 1024px;
+$tablet_max: 1023px;
+$tablet_min: 768px;
+$mobile_max: 767px;
+$mobile_min: 320px;
+
+$bg_main_color: rgba(255, 255, 255, 1);
+$bg_main_color_75: rgba(255, 255, 255, 0.75);
+$bg_second_color: rgba(168, 123, 98, 1);
+$bg_third_color: rgba(255, 255, 255, 0.15);
+$bg_fourth_color: rgba(86, 64, 52, 0.7);
+$bg_five_color: rgba(240, 234, 228, 1);
+$bg_six_color: rgba(29, 22, 19, 0.25);
+$bg_hover: rgba(86, 64, 52, 0.1);
+$bg_toggle_first: rgba(0, 0, 0, 1);
+
+$text_main_color: rgba(29, 22, 19, 1);
+
+$text_second_color: rgba(155, 153, 151, 1);
+
+$border_first: rgba(246, 245, 244, 1);
+$border_second: rgba(240, 234, 228, 1);

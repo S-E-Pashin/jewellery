@@ -1,0 +1,71 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  font-family: $font_p;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+
+  @media (min-height: 4000px) {
+    height: 100vh;
+  }
+}
+
+html {
+  font-size: calc(#{$base_font} * 100vw / 1366);
+  box-sizing: border-box;
+
+  @media (max-width: $tablet_max) {
+    font-size: calc(#{$base_font} * 100vw / 768);
+  }
+
+  @media (max-width: $mobile_max) {
+    font-size: calc(#{$base_font} * 100vw / 320);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input,
+a {
+  &:hover {
+    box-shadow: 0 0 35px 7px $bg_fourth_color;
+    border-radius: 5px;
+    background-color: $bg_hover;
+    cursor: pointer;
+    color: $bg_second_color;
+  }
+}
+
+.visually_hidden:not(:active),
+input[type="checkbox"].visually_hidden,
+input[type="radio"].visually_hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

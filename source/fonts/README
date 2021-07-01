@@ -1,0 +1,30 @@
+Папка для шрифтов.
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 400;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 700;
+
+
+
+font-family: Cormorant Garamond;
+font-style: italic;
+font-weight: 400;
+
+font-family: Cormorant Garamond;
+font-style: normal;
+font-weight: 600;
+
+font-family: Cormorant Garamond;
+font-style: normal;
+font-weight: 700;
+
+
+
