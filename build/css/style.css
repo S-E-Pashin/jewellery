@@ -688,30 +688,31 @@ input[type="radio"].visually_hidden {
   flex-direction: column;
   justify-content: start;
   align-items: center; }
-  .shop__lot--1 .shop__lot-img {
-    background-image: url("../img/shop-img/lot-1-desk.jpg"); }
   @media (max-width: 767px) {
     .shop__lot--1 .shop__lot-heading {
       line-height: 19px; } }
-  .shop__lot--2 .shop__lot-img {
-    background-image: url("../img/shop-img/lot-2-desk.jpg"); }
-  .shop__lot--3 .shop__lot-img {
-    background-image: url("../img/shop-img/lot-3-desk.jpg"); }
-  .shop__lot--4 .shop__lot-img {
-    background-image: url("../img/shop-img/lot-4-desk.jpg"); }
 
 .shop__lot-img {
   width: 270px;
-  height: 284px;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: top center; }
+  height: 284px; }
   @media (max-width: 1023px) {
     .shop__lot-img {
       width: 328px;
       height: 340px; } }
   @media (max-width: 767px) {
     .shop__lot-img {
+      width: 130px;
+      height: 136px; } }
+
+.shop__picture img {
+  width: 270px;
+  height: 284px; }
+  @media (max-width: 1023px) {
+    .shop__picture img {
+      width: 328px;
+      height: 340px; } }
+  @media (max-width: 767px) {
+    .shop__picture img {
       width: 130px;
       height: 136px; } }
 

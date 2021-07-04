@@ -154,7 +154,7 @@
 
   &--1 {
     .shop__lot-img {
-      background-image: url('../img/shop-img/lot-1-desk.jpg');
+      //background-image: url('../img/shop-img/lot-1-desk_1x.jpg');
     }
 
     @media (max-width: $mobile_max) {
@@ -166,19 +166,19 @@
 
   &--2 {
     .shop__lot-img {
-      background-image: url('../img/shop-img/lot-2-desk.jpg');
+      //background-image: url('../img/shop-img/lot-2-desk_1x.jpg');
     }
   }
 
   &--3 {
     .shop__lot-img {
-      background-image: url('../img/shop-img/lot-3-desk.jpg');
+      //background-image: url('../img/shop-img/lot-3-desk_1x.jpg');
     }
   }
 
   &--4 {
     .shop__lot-img {
-      background-image: url('../img/shop-img/lot-4-desk.jpg');
+      //background-image: url('../img/shop-img/lot-4-desk_1x.jpg');
     }
   }
 }
@@ -186,9 +186,24 @@
 .shop__lot-img {
   width: 270px;
   height: 284px;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: top center;
+  //background-size: 100% 100%;
+  //background-repeat: no-repeat;
+  //background-position: top center;
+
+  @media (max-width: $tablet_max) {
+    width: 328px;
+    height: 340px;
+  }
+
+  @media (max-width: $mobile_max) {
+    width: 130px;
+    height: 136px;
+  }
+}
+
+.shop__picture img {
+  width: 270px;
+  height: 284px;
 
   @media (max-width: $tablet_max) {
     width: 328px;
