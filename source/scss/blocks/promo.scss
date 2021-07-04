@@ -5,7 +5,7 @@
   align-items: center;
   width: 100%;
   min-width: 320px;
-  background-image: url('../img/bg-promo-desk.jpg');
+  background-image: url("../img/bg-promo-desk.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 
@@ -17,11 +17,11 @@
 
   @media (max-width: $tablet_max) {
     background-size: 100% 463px;
-    background-image: url('../img/bg-promo-tablet.jpg');
+    background-image: url("../img/bg-promo-tablet.jpg");
   }
 
   @media (max-width: 500px) {
-    background-image: url('../img/bg-promo-mobile.jpg');
+    background-image: url("../img/bg-promo-mobile.jpg");
   }
 }
 
@@ -77,15 +77,15 @@
 
 .promo--catalog {
   max-width: 1366px;
-  background-image: url('../img/catalog/promo/bg-desk.jpg');
+  background-image: url("../img/catalog/promo/bg-desk.jpg");
   background-size: 100% 100%;
 
   @media (max-width: $tablet_max) {
-    background-image: url('../img/catalog/promo/bg-tablet.jpg');
+    background-image: url("../img/catalog/promo/bg-tablet.jpg");
   }
 
   @media (max-width: $mobile_max) {
-    background-image: url('../img/catalog/promo/bg-mobile.jpg');
+    background-image: url("../img/catalog/promo/bg-mobile.jpg");
   }
 
   .promo__wrapper {

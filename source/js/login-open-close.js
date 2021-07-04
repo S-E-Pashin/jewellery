@@ -18,8 +18,8 @@ $(document).ready(function () {
 
       closingClickOverlayLogin();
 
-      $(document).keydown(function (e) {
-        if (e.key === 'Escape') {
+      $(document).keydown(function (elem) {
+        if (elem.key === 'Escape') {
           $('.login').removeClass('login--open').addClass('login--close');
           $('.body').removeClass('body--restricted-travel');
         }

@@ -118,12 +118,12 @@
   }
 
   &--img-care {
-    background-image: url('../img/blog-img/care-desk.jpg');
+    background-image: url("../img/blog-img/care-desk.jpg");
     background-size: 50% 100%;
     background-position: top left;
 
     @media (max-width: $tablet_max) {
-      background-image: url('../img/blog-img/care-tablet.jpg');
+      background-image: url("../img/blog-img/care-tablet.jpg");
     }
 
     @media (max-width: $mobile_max) {
@@ -134,11 +134,11 @@
   &--img-power {
     justify-content: start;
     background-size: 50% 100%;
-    background-image: url('../img/blog-img/power-desk.jpg');
+    background-image: url("../img/blog-img/power-desk.jpg");
     background-position: top right;
 
     @media (max-width: $tablet_max) {
-      background-image: url('../img/blog-img/power-tablet.jpg');
+      background-image: url("../img/blog-img/power-tablet.jpg");
     }
 
     @media (max-width: $mobile_max) {
@@ -150,7 +150,7 @@
   &--img-trends {
     height: 630px;
     align-items: flex-end;
-    background-image: url('../img/blog-img/trends-desk.jpg');
+    background-image: url("../img/blog-img/trends-desk.jpg");
     background-position: top right;
     background-size: 570px 100%;
 
@@ -158,7 +158,7 @@
       height: 300px;
       background-position: top left;
       background-size: 50% 100%;
-      background-image: url('../img/blog-img/trends-tablet.jpg');
+      background-image: url("../img/blog-img/trends-tablet.jpg");
 
       .blog__item-date {
         margin: 86px 0 0 0;

@@ -70,7 +70,8 @@ html {
   box-sizing: inherit; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #1d1613; }
 
 img {
   max-width: 100%;
@@ -694,7 +695,8 @@ input[type="radio"].visually_hidden {
 
 .shop__lot-img {
   width: 270px;
-  height: 284px; }
+  height: 284px;
+  background-color: rgba(255, 255, 255, 0.15); }
   @media (max-width: 1023px) {
     .shop__lot-img {
       width: 328px;
@@ -1692,45 +1694,21 @@ input[type="radio"].visually_hidden {
     .catalog__item {
       margin: 0 15px 27px 15px; } }
 
-.catalog__item-img {
+.catalog__item-img,
+.catalog__item-img img {
   width: 270px;
   height: 272px;
-  background-color: rgba(255, 255, 255, 0.15);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 100% 100%; }
+  background-color: rgba(255, 255, 255, 0.15); }
   @media (max-width: 1180px) {
-    .catalog__item-img {
+    .catalog__item-img,
+    .catalog__item-img img {
       width: 206px;
       height: 208px; } }
   @media (max-width: 767px) {
-    .catalog__item-img {
+    .catalog__item-img,
+    .catalog__item-img img {
       width: 130px;
       height: 136px; } }
-  .catalog__item-img--1 {
-    background-image: url("../img/catalog/list/item-1.jpg"); }
-  .catalog__item-img--2 {
-    background-image: url("../img/catalog/list/item-2.jpg"); }
-  .catalog__item-img--3 {
-    background-image: url("../img/catalog/list/item-3.jpg"); }
-  .catalog__item-img--4 {
-    background-image: url("../img/catalog/list/item-4.jpg"); }
-  .catalog__item-img--5 {
-    background-image: url("../img/catalog/list/item-5.jpg"); }
-  .catalog__item-img--6 {
-    background-image: url("../img/catalog/list/item-6.jpg"); }
-  .catalog__item-img--7 {
-    background-image: url("../img/catalog/list/item-7.jpg"); }
-  .catalog__item-img--8 {
-    background-image: url("../img/catalog/list/item-8.jpg"); }
-  .catalog__item-img--9 {
-    background-image: url("../img/catalog/list/item-9.jpg"); }
-  .catalog__item-img--10 {
-    background-image: url("../img/catalog/list/item-10.jpg"); }
-  .catalog__item-img--11 {
-    background-image: url("../img/catalog/list/item-11.jpg"); }
-  .catalog__item-img--12 {
-    background-image: url("../img/catalog/list/item-12.jpg"); }
 
 .catalog__item-header {
   margin: 24px 0 0 0; }

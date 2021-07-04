@@ -154,13 +154,14 @@
   }
 }
 
-.catalog__item-img {
+.catalog__item-img,
+.catalog__item-img img {
   width: 270px;
   height: 272px;
   background-color: $bg_third_color;
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 100% 100%;
+  //background-repeat: no-repeat;
+  //background-position: top center;
+  //background-size: 100% 100%;
 
   @media (max-width: 1180px) {
     width: 206px;
@@ -172,53 +173,53 @@
     height: 136px;
   }
 
-  &--1 {
-    background-image: url('../img/catalog/list/item-1.jpg');
-  }
-
-  &--2 {
-    background-image: url('../img/catalog/list/item-2.jpg');
-  }
-
-  &--3 {
-    background-image: url('../img/catalog/list/item-3.jpg');
-  }
-
-  &--4 {
-    background-image: url('../img/catalog/list/item-4.jpg');
-  }
-
-  &--5 {
-    background-image: url('../img/catalog/list/item-5.jpg');
-  }
-
-  &--6 {
-    background-image: url('../img/catalog/list/item-6.jpg');
-  }
-
-  &--7 {
-    background-image: url('../img/catalog/list/item-7.jpg');
-  }
-
-  &--8 {
-    background-image: url('../img/catalog/list/item-8.jpg');
-  }
-
-  &--9 {
-    background-image: url('../img/catalog/list/item-9.jpg');
-  }
-
-  &--10 {
-    background-image: url('../img/catalog/list/item-10.jpg');
-  }
-
-  &--11 {
-    background-image: url('../img/catalog/list/item-11.jpg');
-  }
-
-  &--12 {
-    background-image: url('../img/catalog/list/item-12.jpg');
-  }
+  //&--1 {
+  //  background-image: url('../img/catalog/list/item-1.jpg');
+  //}
+  //
+  //&--2 {
+  //  background-image: url('../img/catalog/list/item-2.jpg');
+  //}
+  //
+  //&--3 {
+  //  background-image: url('../img/catalog/list/item-3.jpg');
+  //}
+  //
+  //&--4 {
+  //  background-image: url('../img/catalog/list/item-4.jpg');
+  //}
+  //
+  //&--5 {
+  //  background-image: url('../img/catalog/list/item-5.jpg');
+  //}
+  //
+  //&--6 {
+  //  background-image: url('../img/catalog/list/item-6.jpg');
+  //}
+  //
+  //&--7 {
+  //  background-image: url('../img/catalog/list/item-7.jpg');
+  //}
+  //
+  //&--8 {
+  //  background-image: url('../img/catalog/list/item-8.jpg');
+  //}
+  //
+  //&--9 {
+  //  background-image: url('../img/catalog/list/item-9.jpg');
+  //}
+  //
+  //&--10 {
+  //  background-image: url('../img/catalog/list/item-10.jpg');
+  //}
+  //
+  //&--11 {
+  //  background-image: url('../img/catalog/list/item-11.jpg');
+  //}
+  //
+  //&--12 {
+  //  background-image: url('../img/catalog/list/item-12.jpg');
+  //}
 }
 
 .catalog__item-header {

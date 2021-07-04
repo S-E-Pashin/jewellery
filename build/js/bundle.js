@@ -24,8 +24,8 @@ $(document).ready(function () {
 
       closingClickOverlayLogin();
 
-      $(document).keydown(function (e) {
-        if (e.key === 'Escape') {
+      $(document).keydown(function (elem) {
+        if (elem.key === 'Escape') {
           $('.login').removeClass('login--open').addClass('login--close');
           $('.body').removeClass('body--restricted-travel');
         }
@@ -67,15 +67,17 @@ $('#login-id-email').keyup(function () {
 
 }();
 !function() {
+"use strict";
 /*!************************************!*\
   !*** ./source/js/menu-switcher.js ***!
   \************************************/
+
+
 $(document).ready(function () {
   getSwitchClass();
   removeHeaderJs();
 
-  $('.header__menu-switch').click(function (e) {
-    let target = e.target;
+  $('.header__menu-switch').click(function () {
 
     if ($('.header').hasClass('header--js-close')) {
       removeSwitchClass();
@@ -86,31 +88,29 @@ $(document).ready(function () {
       removeHeaderJs();
     }
   });
-})
+});
 
-const getSwitchClass = function () {
+var getSwitchClass = function () {
   if ($('.header').not('header--js-close')) {
-  $('.header').addClass('header--js-close');
+    $('.header').addClass('header--js-close');
   }
-}
+};
 
-const removeSwitchClass = function () {
+var removeSwitchClass = function () {
   $('.header').removeClass('header--js-close');
-}
+};
 
-const getHeaderJs = function () {
+var getHeaderJs = function () {
   if ($('.header').not('header--js')) {
     $('.header').addClass('header--js');
   }
-}
+};
 
-const removeHeaderJs = function () {
+var removeHeaderJs = function () {
   if ($('.header').hasClass('header--js')) {
     $('.header').removeClass('header--js');
   }
-
-
-}
+};
 
 }();
 !function() {
@@ -250,12 +250,10 @@ $(document).ready(function () {
   \*********************************/
 
 
-// Пока деактивирую
-
 $(document).ready(function () {
 
   $('.faq__item').click(function (e) {
-    let target = e.target;
+    var target = e.target;
 
     if ($(target).hasClass('faq__item--close')) {
       $(target).removeClass('faq__item--close');
@@ -265,11 +263,9 @@ $(document).ready(function () {
     }
   });
 
-  //Закрыть все открытые вопросы
-
-  let closeAllFaqItem = function () {
+  var closeAllFaqItem = function () {
     $('.faq__item').addClass('faq__item--close');
-  }
+  };
 
   closeAllFaqItem();
 });
@@ -283,42 +279,35 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
-  let filter = $('.catalog__filter-wrapper');
-  let filterSwitch = $('.catalog__switch-filter');
-  let filterButtonClose = $('.filter__close-button');
+  var filter = $('.catalog__filter-wrapper');
+  var filterSwitch = $('.catalog__switch-filter');
+  var filterButtonClose = $('.filter__close-button');
 
-  filterSwitch.click(function (e) {
-
-    // if ($(target).is(':not(.filter__section-switch)')) {
+  filterSwitch.click(function () {
     if (filterSwitch.hasClass('catalog__switch-filter--visible')) {
       filterSwitch.removeClass('catalog__switch-filter--visible');
       openFilter();
     } else {
       filterSwitch.addClass('catalog__switch-filter--visible');
     }
-    // }
   });
 
   filterButtonClose.click(function () {
     closeFilter();
     showFilterSwitch();
-  })
+  });
 
-  let closeFilter = function () {
+  var closeFilter = function () {
     filter.addClass('catalog__filter-wrapper--close');
-  }
+  };
 
-  let openFilter = function () {
+  var openFilter = function () {
     filter.removeClass('catalog__filter-wrapper--close');
-  }
+  };
 
-  let hideFilterSwitch = function () {
-    // .addClass('');
-  }
-
-  let showFilterSwitch = function () {
+  var showFilterSwitch = function () {
     filterSwitch.addClass('catalog__switch-filter--visible');
-  }
+  };
 
   closeFilter();
   showFilterSwitch();
@@ -335,7 +324,7 @@ $(document).ready(function () {
 $(document).ready(function () {
 
   $('.filter__header').click(function (e) {
-    let target = e.target;
+    var target = e.target;
 
     if ($(target).is(':not(.filter__section-switch)')) {
       if ($(target).hasClass('filter__header--close')) {
@@ -344,22 +333,24 @@ $(document).ready(function () {
         if ($(target).parent().hasClass('filter__section--close')) {
           $(target).parent().removeClass('filter__section--close');
         }
-      } else {$(target).addClass('filter__header--close');
+      } else {
+        $(target).addClass('filter__header--close');
+      }
 
-        if ($(target).parent().hasClass('filter__section--close')) {
-        } else {
-          $(target).parent().addClass('filter__section--close');
-        }
+      if ($(target).parent().hasClass('filter__section--close')) {
+        //
+      } else {
+        $(target).parent().addClass('filter__section--close');
       }
     }
   });
-
-  let closeAllFaqItem = function () {
-    $('.faq__item').addClass('faq__item--close');
-  }
-
-  closeAllFaqItem();
 });
+
+var closeAllFaqItem = function () {
+  $('.faq__item').addClass('faq__item--close');
+};
+
+closeAllFaqItem();
 
 }();
 /******/ })()
