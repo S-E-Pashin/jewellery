@@ -153,32 +153,10 @@
   align-items: center;
 
   &--1 {
-    .shop__lot-img {
-      //background-image: url('../img/shop-img/lot-1-desk_1x.jpg');
-    }
-
     @media (max-width: $mobile_max) {
       .shop__lot-heading {
         line-height: 19px;
       }
-    }
-  }
-
-  &--2 {
-    .shop__lot-img {
-      //background-image: url('../img/shop-img/lot-2-desk_1x.jpg');
-    }
-  }
-
-  &--3 {
-    .shop__lot-img {
-      //background-image: url('../img/shop-img/lot-3-desk_1x.jpg');
-    }
-  }
-
-  &--4 {
-    .shop__lot-img {
-      //background-image: url('../img/shop-img/lot-4-desk_1x.jpg');
     }
   }
 }
@@ -187,9 +165,6 @@
   width: 270px;
   height: 284px;
   background-color: $bg_third_color;
-  //background-size: 100% 100%;
-  //background-repeat: no-repeat;
-  //background-position: top center;
 
   @media (max-width: $tablet_max) {
     width: 328px;
